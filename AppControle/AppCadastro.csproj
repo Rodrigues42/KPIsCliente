@@ -59,6 +59,7 @@
     <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -70,37 +71,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsumirAPI.cs" />
     <Compile Include="Clientes.cs" />
-    <Compile Include="Estados.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Calendario.Designer.cs">
+      <DependentUpon>Calendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="Configurar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="Configurar.Designer.cs">
+      <DependentUpon>Configurar.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="Noticias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="Noticias.Designer.cs">
+      <DependentUpon>Noticias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DbClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DbClientes.Designer.cs">
+      <DependentUpon>DbClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Calendario.resx">
+      <DependentUpon>Calendario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="Configurar.resx">
+      <DependentUpon>Configurar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="Noticias.resx">
+      <DependentUpon>Noticias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DbClientes.resx">
+      <DependentUpon>DbClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +140,15 @@
     </Compile>
     <None Include=".editorconfig" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\AppCadastro.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\AppCadastro.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\Clientes.datasource" />
+    <None Include="Properties\DataSources\ConsumirAPI.datasource" />
+    <None Include="Properties\DataSources\Estados.datasource" />
+    <None Include="Properties\DataSources\Form1.datasource" />
+    <None Include="Properties\DataSources\Form2.datasource" />
+    <None Include="Properties\DataSources\Form3.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -183,6 +218,39 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-de-perfil %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cliente %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noticias-falsas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noticias-falsas %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedometer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuration %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
