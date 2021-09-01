@@ -76,14 +76,14 @@ namespace AppCadastro
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(47, 128);
+            this.label1.Location = new System.Drawing.Point(0, 146);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.Size = new System.Drawing.Size(190, 20);
             this.label1.TabIndex = 1;
-            this.label1.Text = "User name";
+            this.label1.Text = "Admin";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
             // 
@@ -109,7 +109,7 @@ namespace AppCadastro
             this.LbnDescricao.AutoSize = true;
             this.LbnDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LbnDescricao.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.LbnDescricao.Location = new System.Drawing.Point(195, 5);
+            this.LbnDescricao.Location = new System.Drawing.Point(193, 5);
             this.LbnDescricao.Name = "LbnDescricao";
             this.LbnDescricao.Size = new System.Drawing.Size(156, 31);
             this.LbnDescricao.TabIndex = 1;
@@ -123,6 +123,7 @@ namespace AppCadastro
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(710, 561);
             this.panel4.TabIndex = 3;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // BtnConfigura
             // 
@@ -216,13 +217,18 @@ namespace AppCadastro
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::AppCadastro.Properties.Resources.perfil;
-            this.pictureBox1.Location = new System.Drawing.Point(39, 11);
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Image = global::AppCadastro.Properties.Resources.homem_de_negocios;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(110, 110);
+            this.pictureBox1.Size = new System.Drawing.Size(137, 131);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Principal
             // 
@@ -237,7 +243,7 @@ namespace AppCadastro
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.LbnDescricao);
-            this.ForeColor = System.Drawing.Color.White;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.MaximizeBox = false;
@@ -250,7 +256,6 @@ namespace AppCadastro
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

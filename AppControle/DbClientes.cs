@@ -17,6 +17,10 @@ namespace AppCadastro
     {
         public static List<Clientes> Dados { get; set; }
         public static int valorTotal { get; set; }
+        public static int QtdClientes { get; set; }
+        public static int MaiorVenda { get; set; }
+        public static List<int> Produtos { get; set; }
+        public static List<string> Estados { get; set;  }
 
         public DbClientes()
         {
@@ -40,7 +44,6 @@ namespace AppCadastro
             try
             {
                 var URI = "http://localhost:5000/clientes";
-
                 using (var client = new HttpClient())
                 {
                     using (var response = await client.GetAsync(URI))
@@ -63,8 +66,41 @@ namespace AppCadastro
                     soma += clientes.valorTotal;
                 }
                 valorTotal = soma;
+
+                int quantidadeClientes = 0;
+                foreach (var clientes in Dados)
+                {
+                    quantidadeClientes+=1;
+                }
+                QtdClientes = quantidadeClientes;
+
+                int maior = 0;
+                foreach (var clientes in Dados)
+                {
+                    if (clientes.valorTotal > maior)
+                    {
+                        maior = clientes.valorTotal;
+                    }
+                }
+                MaiorVenda = maior;
+
+                List<int> produtos = new List<int>();
+                List<string> estados = new List<string>();
+                foreach (var clientes in Dados)
+                {
+                    if (!produtos.Contains(clientes.Produto))
+                    {
+                        produtos.Add(clientes.Produto);
+                    }
+                    if (!estados.Contains(clientes.Estado))
+                    {
+                        estados.Add(clientes.Estado);
+                    }
+                }
+                Produtos = produtos;
+                Estados = estados;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 MessageBox.Show("Erro ao se conectar na API");
             }

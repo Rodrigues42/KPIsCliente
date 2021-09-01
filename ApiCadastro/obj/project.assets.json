@@ -199,11 +199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodri\\Workspace\\C-Sharp\\Projeto1\\ApiCadastro\\crud.csproj",
+      "projectUniqueName": "C:\\Users\\rodri\\Workspace\\C-Sharp\\1-Projeto1\\ApiCadastro\\crud.csproj",
       "projectName": "crud",
-      "projectPath": "C:\\Users\\rodri\\Workspace\\C-Sharp\\Projeto1\\ApiCadastro\\crud.csproj",
+      "projectPath": "C:\\Users\\rodri\\Workspace\\C-Sharp\\1-Projeto1\\ApiCadastro\\crud.csproj",
       "packagesPath": "C:\\Users\\rodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rodri\\Workspace\\C-Sharp\\Projeto1\\ApiCadastro\\obj\\",
+      "outputPath": "C:\\Users\\rodri\\Workspace\\C-Sharp\\1-Projeto1\\ApiCadastro\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

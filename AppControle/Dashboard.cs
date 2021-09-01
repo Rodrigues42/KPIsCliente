@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace AppCadastro
 {
@@ -24,9 +25,31 @@ namespace AppCadastro
         {
             AtualizarDataHora();
             ValoresMeta();
+
+            //Barra de progresso
             progressBar1.PerformStep();
-            LbMeta.Text = "R$ " + Meta;
-            label3.Text = "R$ " + DbClientes.valorTotal;
+
+            //Números do dashboard
+            LbMeta.Text = Meta.ToString("C");
+            label3.Text = DbClientes.valorTotal.ToString("C");
+            label6.Text = DbClientes.MaiorVenda.ToString("C");
+            try
+            {
+                LbTicketMedio.Text = (DbClientes.valorTotal / DbClientes.QtdClientes).ToString("C");
+            } catch (Exception)
+            {
+                Console.WriteLine("Sem dados");
+            }
+            try
+            {
+                label11.Text = DbClientes.Produtos.Count().ToString();
+                label9.Text = DbClientes.Estados.Count().ToString();
+            } catch (Exception)
+            {
+                Console.WriteLine("Sem dados");
+            }
+
+            label12.Text = DbClientes.QtdClientes.ToString();
         }
 
         public void AtualizarDataHora()
@@ -44,13 +67,20 @@ namespace AppCadastro
         {
             progressBar1.Maximum = Meta;
             progressBar1.Minimum = 0;
-            progressBar1.Value = DbClientes.valorTotal;
+            try
+            {
+                progressBar1.Value = DbClientes.valorTotal;
+            }
+            catch (Exception)
+            {
+                progressBar1.Value = Meta;
+            }
+
             progressBar1.BackColor = Color.FromArgb(30, 30, 30);
         }
 
         public void GraficoBarras()
         {
         }
-
     }
 }

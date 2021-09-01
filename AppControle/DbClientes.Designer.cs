@@ -110,7 +110,7 @@ namespace AppCadastro
             this.dataGridView1.Size = new System.Drawing.Size(688, 502);
             this.dataGridView1.TabIndex = 8;
             // 
-            // Form3
+            // DbClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -121,7 +121,7 @@ namespace AppCadastro
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(550, 170);
-            this.Name = "Form3";
+            this.Name = "DbClientes";
             this.Text = "Form3";
             this.TransparencyKey = System.Drawing.Color.White;
             this.Load += new System.EventHandler(this.Form3_Load);

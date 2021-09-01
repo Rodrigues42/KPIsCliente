@@ -26,7 +26,7 @@ namespace AppCadastro
             TransparencyKey = Color.Black;
 
             this.panel4.Controls.Clear();
-            Dashboard telaDashboard = new Dashboard() { Dock = DockStyle.Right, TopLevel = false, TopMost = true };
+            Dashboard telaDashboard = new Dashboard() { Dock = DockStyle.Bottom , TopLevel = false, TopMost = true };
             telaDashboard.FormBorderStyle = FormBorderStyle.None;
             this.panel4.Controls.Add(telaDashboard);
             telaDashboard.Show();
@@ -127,6 +127,16 @@ namespace AppCadastro
         private void BtnSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

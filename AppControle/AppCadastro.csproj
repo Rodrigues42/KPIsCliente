@@ -84,6 +84,7 @@
     <Compile Include="Configurar.Designer.cs">
       <DependentUpon>Configurar.cs</DependentUpon>
     </Compile>
+    <Compile Include="GetAllClientes.cs" />
     <Compile Include="Noticias.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +252,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\configuration %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relogio %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relogio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relogio %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\relogio %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota-de-banco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homem-de-negocios.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
