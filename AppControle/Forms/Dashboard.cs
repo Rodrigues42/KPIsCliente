@@ -50,6 +50,19 @@ namespace AppCadastro
             }
 
             label12.Text = DbClientes.QtdClientes.ToString();
+
+            // Grafico de barras
+            try
+            {
+                for (int i = 0; i < DbClientes.Produtos.Count(); i++)
+                {
+                    Series series = chart1.Series.Add(DbClientes.Produtos[i].ToString());
+                    series.Points.Add(DbClientes.vendasPorProduto[i]);
+                }
+            } catch (Exception)
+            {
+                Console.WriteLine("Sem dados");
+            }
         }
 
         public void AtualizarDataHora()
@@ -81,6 +94,11 @@ namespace AppCadastro
 
         public void GraficoBarras()
         {
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

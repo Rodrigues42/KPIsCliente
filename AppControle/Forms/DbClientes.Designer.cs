@@ -42,7 +42,7 @@ namespace AppCadastro
             // BtnAtualizar
             // 
             this.BtnAtualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAtualizar.ForeColor = System.Drawing.Color.Black;
+            this.BtnAtualizar.ForeColor = System.Drawing.Color.RoyalBlue;
             this.BtnAtualizar.Location = new System.Drawing.Point(12, 14);
             this.BtnAtualizar.Name = "BtnAtualizar";
             this.BtnAtualizar.Size = new System.Drawing.Size(84, 28);

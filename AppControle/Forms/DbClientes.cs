@@ -21,6 +21,7 @@ namespace AppCadastro
         public static int MaiorVenda { get; set; }
         public static List<int> Produtos { get; set; }
         public static List<string> Estados { get; set;  }
+        public static List<int> vendasPorProduto { get; set; }
 
         public DbClientes()
         {
@@ -99,6 +100,32 @@ namespace AppCadastro
                 }
                 Produtos = produtos;
                 Estados = estados;
+
+                try
+                {
+                    List<int> totalPorProdutos = new List<int>();
+                    for (int i=0; i < Produtos.Count(); i++)
+                    {
+                        totalPorProdutos.Add(Produtos[i]);
+                    }
+                    foreach (var clientes in Dados)
+                    {
+                        for (int i = 0; i < Produtos.Count(); i++)
+                        {
+                            if (clientes.Produto == Produtos[i])
+                            {
+                                totalPorProdutos[i] += clientes.valorTotal;
+                                break;
+                            }
+                        }
+                    }
+                    vendasPorProduto = totalPorProdutos;
+                }
+                catch
+                {
+                    MessageBox.Show("Erro ao somar o total por produtos");
+                }
+                                
             }
             catch (Exception)
             {

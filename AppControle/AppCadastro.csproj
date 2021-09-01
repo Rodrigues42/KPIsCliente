@@ -71,62 +71,62 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clientes.cs" />
-    <Compile Include="Calendario.cs">
+    <Compile Include="Modelos\Estado.cs" />
+    <Compile Include="Modelos\Clientes.cs" />
+    <Compile Include="Forms\Calendario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Calendario.Designer.cs">
+    <Compile Include="Forms\Calendario.Designer.cs">
       <DependentUpon>Calendario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Configurar.cs">
+    <Compile Include="Forms\Configurar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Configurar.Designer.cs">
+    <Compile Include="Forms\Configurar.Designer.cs">
       <DependentUpon>Configurar.cs</DependentUpon>
     </Compile>
-    <Compile Include="GetAllClientes.cs" />
-    <Compile Include="Noticias.cs">
+    <Compile Include="Forms\Noticias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Noticias.Designer.cs">
+    <Compile Include="Forms\Noticias.Designer.cs">
       <DependentUpon>Noticias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Principal.cs">
+    <Compile Include="Forms\Principal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Principal.Designer.cs">
+    <Compile Include="Forms\Principal.Designer.cs">
       <DependentUpon>Principal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dashboard.cs">
+    <Compile Include="Forms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dashboard.Designer.cs">
+    <Compile Include="Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="DbClientes.cs">
+    <Compile Include="Forms\DbClientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DbClientes.Designer.cs">
+    <Compile Include="Forms\DbClientes.Designer.cs">
       <DependentUpon>DbClientes.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Calendario.resx">
+    <EmbeddedResource Include="Forms\Calendario.resx">
       <DependentUpon>Calendario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Configurar.resx">
+    <EmbeddedResource Include="Forms\Configurar.resx">
       <DependentUpon>Configurar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Noticias.resx">
+    <EmbeddedResource Include="Forms\Noticias.resx">
       <DependentUpon>Noticias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Principal.resx">
+    <EmbeddedResource Include="Forms\Principal.resx">
       <DependentUpon>Principal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Dashboard.resx">
+    <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DbClientes.resx">
+    <EmbeddedResource Include="Forms\DbClientes.resx">
       <DependentUpon>DbClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -274,5 +274,6 @@
   <ItemGroup>
     <None Include="Resources\homem-de-negocios.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
