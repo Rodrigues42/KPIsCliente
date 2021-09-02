@@ -17,5 +17,9 @@ namespace AppCadastro
             InitializeComponent();
         }
 
+        private void Configurar_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

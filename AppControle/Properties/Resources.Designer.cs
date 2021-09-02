@@ -113,6 +113,16 @@ namespace AppCadastro.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap configuration {
+            get {
+                object obj = ResourceManager.GetObject("configuration", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap configuration__1_ {
             get {
                 object obj = ResourceManager.GetObject("configuration (1)", resourceCulture);
@@ -146,6 +156,36 @@ namespace AppCadastro.Properties {
         internal static System.Drawing.Bitmap gear__1_ {
             get {
                 object obj = ResourceManager.GetObject("gear (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grafico_de_linha {
+            get {
+                object obj = ResourceManager.GetObject("grafico-de-linha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grafico_de_linha__1_ {
+            get {
+                object obj = ResourceManager.GetObject("grafico-de-linha (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap grafico_de_linha__2_ {
+            get {
+                object obj = ResourceManager.GetObject("grafico-de-linha (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -125,7 +125,6 @@ namespace AppCadastro
                 {
                     MessageBox.Show("Erro ao somar o total por produtos");
                 }
-                                
             }
             catch (Exception)
             {

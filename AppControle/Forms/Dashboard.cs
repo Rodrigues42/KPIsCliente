@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization;
 using System.Windows.Forms.DataVisualization.Charting;
 
 namespace AppCadastro
@@ -90,15 +91,6 @@ namespace AppCadastro
             }
 
             progressBar1.BackColor = Color.FromArgb(30, 30, 30);
-        }
-
-        public void GraficoBarras()
-        {
-        }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -35,7 +35,7 @@ namespace AppCadastro
             // monthCalendar1
             // 
             this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(3, 3);
-            this.monthCalendar1.Location = new System.Drawing.Point(11, 45);
+            this.monthCalendar1.Location = new System.Drawing.Point(12, 14);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 0;
             // 

@@ -274,6 +274,17 @@
   <ItemGroup>
     <None Include="Resources\homem-de-negocios.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\grafico-de-linha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafico-de-linha %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafico-de-linha %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\configuration.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
